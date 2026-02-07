@@ -15,7 +15,8 @@ void Selection_sort(int arr[],int n)
 			arr[mini]=arr[i];
 			arr[i]=temp;
 }
-}}
+}
+}
 	int main()
 	{
 		int n;
