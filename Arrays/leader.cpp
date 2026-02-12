@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
-vector <int> superior_elements(int arr[])
+vector<int> superior_elements(vector<int>&a)
 {
 	vector<int> ans;
 	int maxi=INT_MIN;
@@ -11,21 +11,21 @@ vector <int> superior_elements(int arr[])
 	{
 		if(a[i]>maxi)
 		{
-           ans.push_back(a[i]):
+           ans.push_back(a[i]);
 		}
-		maxi=max(maxi,a[i];
+		maxi=max(maxi,a[i]);
     }
-	sort.
-
+	sort(ans.begin(),ans.end());
+	return ans;
 }
 	int main()
 	{
 		int n;
 		cin>>n;
-		int arr[n];
+		vector<int> arr(n);
 		for(int i=0;i<n;i++) cin>>arr[i];
 		vector<int> a=superior_elements(arr);
-		for(int i=0;i<n;i++) cout<<a[i]<<"  ";
+		for(int i=0;i<a.size();i++) cout<<a[i]<<"  ";
 		
 		return 0;
 	}
