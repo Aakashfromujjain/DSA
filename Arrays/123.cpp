@@ -9,7 +9,7 @@ int main()
         count = 0; // Reset count at the start of each j loop
         for (i = 1; i <= 300; i++)
         {
-            if (j % i == 0)
+            if (j % i==0)
             {
                 count++;
             }
