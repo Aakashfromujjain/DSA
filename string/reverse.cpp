@@ -6,7 +6,7 @@ class Solution {
         int n=s.size();
         for(int i=0;i<n/2;i++)
         {
-            swap(s[i],swap[n-i-1]);
+            swap(s[i],s[n-i-1]);
         }
         return s;
     }
