@@ -1,0 +1,15 @@
+class Solution:
+    def detectLoop(self, head):
+        # code here
+        slow = head
+        fast = head
+        
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            
+            # pointers met = loop
+            if slow == fast:
+                return True
+    
+        return False
