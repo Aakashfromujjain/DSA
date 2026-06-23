@@ -1,0 +1,11 @@
+class Solution:
+    def findFloor(self, arr, x):
+        # code here
+        n=len(arr)
+        k=-1
+        for i in range(0,n):
+            if(arr[i]<=x):
+                k=i
+            else:
+                break
+        return k
