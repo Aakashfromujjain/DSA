@@ -10,12 +10,14 @@ int main()
 	{		flag=0;
 		for(int j=0;j<n-1;j++)
 		{
-			if(arr[j]==i){
+			if(arr[j]!=i){
 		
 			flag=i;
+			
 			break;
 		}
-		cout<<flag;
+		
 		}
 	}
+	cout<<flag;
 }
