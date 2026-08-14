@@ -1,3 +1,4 @@
 # DSA
 
-Dsa practise repository
+DSA practise repository
+for DSA problems and basics
